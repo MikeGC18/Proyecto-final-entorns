@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "wNvpzooiVT0=",
+  "dgSpecHash": "nbqulTuhOuc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Albert\\Desktop\\Proyecto-final-entorns\\Proyecto final.csproj",
+  "projectFilePath": "C:\\Users\\Albert\\Desktop\\Proyecto-final-entorns\\MVC.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Albert\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.11\\microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
-    "C:\\Users\\Albert\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.11\\microsoft.windowsdesktop.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\Albert\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Albert\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.11\\microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
-    "C:\\Users\\Albert\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.11\\microsoft.netcore.app.host.win-x64.8.0.11.nupkg.sha512"
+    "C:\\Users\\Albert\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.11\\microsoft.netcore.app.host.win-x64.8.0.11.nupkg.sha512",
+    "C:\\Users\\Albert\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.11\\microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\Albert\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.11\\microsoft.windowsdesktop.app.ref.8.0.11.nupkg.sha512"
   ],
   "logs": []
 }
