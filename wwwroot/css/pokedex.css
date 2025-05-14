@@ -1,0 +1,103 @@
+/* ----------  Variables de color  ---------- */
+:root {
+    --poke-red:     #EF5350;
+    --poke-red-dk:  #C62828;
+    --poke-yellow:  #FFCB05;
+    --poke-blue:    #3B4CCA;
+    --poke-grey:    #F5F5F5;
+    --poke-black:   #212121;
+}
+
+/* ----------  Reset rápido  ---------- */
+* { box-sizing:border-box; margin:0; padding:0; }
+html, body { font-family:'Press Start 2P', monospace; background:var(--poke-grey); }
+
+/* ----------  Layout básico  ---------- */
+h1 {
+    text-align:center;
+    color:var(--poke-blue);
+    font-size:1.2rem;
+    margin:1.5rem 0;
+    text-shadow:2px 2px white;
+}
+
+/* ----------  Acordeón <details> ---------- */
+details {
+    border:4px solid var(--poke-blue);
+    border-radius:10px;
+    margin:.6rem 1rem;
+    background:white;
+    box-shadow:0 3px 6px rgba(0,0,0,.2);
+    transition:transform .15s;
+}
+details[open] { transform:scale(1.02); }
+
+summary {
+    list-style:none;               /* oculta la flecha nativa */
+    cursor:pointer;
+    padding:.9rem 1rem;
+    background:var(--poke-red);
+    color:white;
+    border-radius:6px 6px 0 0;
+    position:relative;
+}
+summary::-webkit-details-marker { display:none; } /* Safari / Chrome */
+
+summary::after {                 /* pokéball decorativa */
+    content:"";
+    width:18px; height:18px;
+    border:3px solid white;
+    background:radial-gradient(circle at 50% 55%, white 0 30%, var(--poke-black) 30% 45%, white 45%);
+    border-radius:50%;
+    position:absolute;
+    right:16px; top:50%;
+    transform:translateY(-50%);
+}
+
+details[open] summary {
+    background:var(--poke-yellow);
+    color:var(--poke-black);
+}
+
+/* ----------  Spinner  ---------- */
+.spinner {
+    width:36px; height:36px;
+    border:5px solid var(--poke-blue);
+    border-top-color:transparent;
+    border-radius:50%;
+    margin:1rem auto 2rem;
+    animation:spin 1s linear infinite;
+}
+@keyframes spin { to { transform:rotate(360deg); } }
+
+/* ----------  Tarjeta del Pokémon  ---------- */
+.card {
+    text-align:center;
+    padding:1.2rem .5rem 1.8rem;
+    background:linear-gradient(135deg, var(--poke-grey) 0%, white 80%);
+}
+
+.card img {
+    width:140px;
+    filter:drop-shadow(2px 4px 2px rgba(0,0,0,.25));
+}
+
+.card table {
+    margin:1rem auto 0;
+    border-collapse:collapse;
+    font-size:.55rem;
+}
+
+.card th,
+.card td {
+    border:2px solid var(--poke-blue);
+    padding:.35rem .7rem;
+}
+
+.card th {
+    background:var(--poke-yellow);
+    color:var(--poke-black);
+}
+.card td {
+    background:white;
+}
