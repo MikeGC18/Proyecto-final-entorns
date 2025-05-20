@@ -1,0 +1,62 @@
+﻿@model Proyecto_final_entorns.Models.Pokemon
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<!-- Botón centrado para cambiar a la sección Digimon -->
+<div class="d-flex justify-content-center mb-3">
+    <a asp-controller="Digimon"
+       asp-action="Index"
+       class="btn btn-secondary">
+        Ir a Digimon
+    </a>
+</div>
+
+<div class="pokedex">
+
+    <!-- Parte izquierda: carcasa + pantalla -->
+    <div>
+        <div class="pokedex-lights">
+            <div class="pokedex-light" style="--c:#4fc3f7"></div>
+            <div class="pokedex-light" style="--c:#ffeb3b"></div>
+            <div class="pokedex-light" style="--c:#66bb6a"></div>
+        </div>
+
+        <div class="pokedex-screen">
+            <img src="@Model.ImageUrl" alt="@Model.Name" />
+        </div>
+    </div>
+
+    <!-- Parte derecha: información -->
+    <div class="pokedex-info">
+        <h1 class="text-capitalize">@Model.Name (#@Model.Id)</h1>
+
+        <p class="mb-3"><em>@Model.Flavor</em></p>
+
+        <dl>
+            <dt>Tipo(s)</dt>
+            <dd>@string.Join(", ", Model.Types)</dd>
+
+            <dt>Habilidades</dt>
+            <dd>@string.Join(", ", Model.Abilities)</dd>
+
+            <dt>Altura</dt>
+            <dd>@Model.HeightM.ToString("N1") m</dd>
+
+            <dt>Peso</dt>
+            <dd>@Model.WeightKg.ToString("N0") kg</dd>
+
+            <dt>Stats base</dt>
+            <dd>
+                <ul class="list-unstyled mb-0">
+                    @foreach (var s in Model.BaseStats)
+                    {
+                        <li>@s.Key : @s.Value</li>
+                    }
+                </ul>
+            </dd>
+        </dl>
+
+        <a asp-action="Random" class="btn btn-primary mt-3">Otro al azar</a>
+    </div>
+</div>

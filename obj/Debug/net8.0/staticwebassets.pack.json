@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Albert\\Desktop\\Proyecto-final-entorns\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MVC.bundle.scp.css",
-      "PackagePath": "staticwebassets\\MVC.nk8e3srjs6.bundle.scp.css"
+      "Id": "C:\\Users\\Albert\\Desktop\\Proyecto-final-entorns\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Proyecto_final_entorns.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Proyecto_final_entorns.6tjsvb5rd9.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\Albert\\Desktop\\Proyecto-final-entorns\\wwwroot\\css\\pokedex.css",
@@ -245,24 +245,24 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MVC.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Proyecto_final_entorns.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Proyecto_final_entorns.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MVC.props",
-      "PackagePath": "build\\MVC.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Proyecto_final_entorns.props",
+      "PackagePath": "build\\Proyecto_final_entorns.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MVC.props",
-      "PackagePath": "buildMultiTargeting\\MVC.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Proyecto_final_entorns.props",
+      "PackagePath": "buildMultiTargeting\\Proyecto_final_entorns.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MVC.props",
-      "PackagePath": "buildTransitive\\MVC.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Proyecto_final_entorns.props",
+      "PackagePath": "buildTransitive\\Proyecto_final_entorns.props"
     }
   ],
   "ElementsToRemove": []

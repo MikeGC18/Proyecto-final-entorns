@@ -60,9 +60,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Albert\\Desktop\\Proyecto-final-entorns\\MVC.csproj",
-      "projectName": "MVC",
-      "projectPath": "C:\\Users\\Albert\\Desktop\\Proyecto-final-entorns\\MVC.csproj",
+      "projectUniqueName": "C:\\Users\\Albert\\Desktop\\Proyecto-final-entorns\\Proyecto_final_entorns.csproj",
+      "projectName": "Proyecto_final_entorns",
+      "projectPath": "C:\\Users\\Albert\\Desktop\\Proyecto-final-entorns\\Proyecto_final_entorns.csproj",
       "packagesPath": "C:\\Users\\Albert\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Albert\\Desktop\\Proyecto-final-entorns\\obj\\",
       "projectStyle": "PackageReference",

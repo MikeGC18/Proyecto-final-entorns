@@ -1,32 +1,38 @@
-using MVC.Services;
-
+using Proyecto_final_entorns.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// MVC
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddHttpClient<IPokeApiService, PokeApiService>();
+// HttpClient para la PokéAPI
+builder.Services.AddHttpClient<IPokeApiService, PokeApiService>(c =>
+{
+    c.BaseAddress = new Uri("https://pokeapi.co/api/v2/");
+});
+
+builder.Services.AddHttpClient<IDigimonApiService, DigimonApiService>(c =>
+{
+    c.BaseAddress = new Uri("https://digimon-api.vercel.app/api/digimon/");
+});
+
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
 
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Pokemon}/{action=Index}/{id?}");
 
 app.Run();

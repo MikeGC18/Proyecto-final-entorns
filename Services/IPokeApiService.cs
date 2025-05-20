@@ -1,8 +1,9 @@
-namespace MVC.Services;
+using Proyecto_final_entorns.Models;
 
-using MVC.Models;
+namespace Proyecto_final_entorns.Services;
+
 public interface IPokeApiService
 {
-    Task<List<PokemonListItem>> GetFirstGenerationAsync();
-    Task<Pokemon?> GetPokemonAsync(string idOrName);
+    Task<IEnumerable<PokemonListItem>> GetListAsync(int limit = 20);
+    Task<Pokemon>                      GetAsync   (string idOrName);
 }

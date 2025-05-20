@@ -1,31 +1,22 @@
-using Newtonsoft.Json;
-
-namespace MVC.Models;
+namespace Proyecto_final_entorns.Models;
 
 public class Pokemon
 {
-    public int Id { get; set; }
-    public string Name { get; set; } = default!;
-    public Sprites Sprites { get; set; } = default!;
-    public List<Stat> Stats { get; set; } = new();
-}
+    public int    Id       { get; set; }
+    public string Name     { get; set; } = string.Empty;
+    public string ImageUrl { get; set; } = string.Empty;
 
-public class Sprites
-{
-    [JsonProperty("front_default")]
-    public string FrontDefault { get; set; } = default!;
-}
+    // Datos físicos
+    public decimal HeightM  { get; set; }          // metros
+    public decimal WeightKg { get; set; }          // kilogramos
 
-public class Stat
-{
-    [JsonProperty("base_stat")]
-    public int BaseStat { get; set; }
+    // Listas
+    public List<string> Types     { get; set; } = new();
+    public List<string> Abilities { get; set; } = new();
 
-    [JsonProperty("stat")]
-    public NamedApiResource StatInfo { get; set; } = default!;
-}
+    // Estadísticas base (HP, Attack, Defense…)
+    public Dictionary<string, int> BaseStats { get; set; } = new();
 
-public class NamedApiResource
-{
-    public string Name { get; set; } = default!;
+    // Texto de la Pokédex
+    public string Flavor { get; set; } = string.Empty;
 }

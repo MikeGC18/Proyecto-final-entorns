@@ -1,8 +1,7 @@
-namespace MVC.Models;
-
+namespace Proyecto_final_entorns.Models;
 
 public class PokemonListItem
 {
-    public string Name { get; set; } = default!;
-    public string Url  { get; set; } = default!;   // viene así en la PokéAPI
+    public int    Id   { get; set; }
+    public string Name { get; set; } = string.Empty;
 }

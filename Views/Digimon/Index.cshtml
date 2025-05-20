@@ -1,0 +1,41 @@
+@model Proyecto_final_entorns.Models.Digimon
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<!-- Botón centrado para cambiar a la sección Pokémon -->
+<div class="d-flex justify-content-center mb-3">
+    <a asp-controller="Pokemon"
+       asp-action="Index"
+       class="btn btn-secondary">
+        Ir a Pokémon
+    </a>
+</div>
+
+<div class="pokedex">
+
+    <!-- Parte izquierda: carcasa + pantalla -->
+    <div>
+        <div class="pokedex-lights">
+            <div class="pokedex-light" style="--c:#9fa8da"></div>
+            <div class="pokedex-light" style="--c:#ce93d8"></div>
+            <div class="pokedex-light" style="--c:#80cbc4"></div>
+        </div>
+
+        <div class="pokedex-screen">
+            <img src="@Model.Img" alt="@Model.Name" />
+        </div>
+    </div>
+
+    <!-- Parte derecha: información -->
+    <div class="pokedex-info">
+        <h1 class="text-capitalize">@Model.Name (#@Model.Index)</h1>
+
+        <dl>
+            <dt>Nivel</dt>
+            <dd>@Model.Level</dd>
+        </dl>
+
+        <a asp-action="Random" class="btn btn-primary mt-3">Otro al azar</a>
+    </div>
+</div>
