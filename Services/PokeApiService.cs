@@ -9,9 +9,6 @@ public class PokeApiService : IPokeApiService
     private readonly HttpClient _http;
     public PokeApiService(HttpClient http) => _http = http;
 
-    // ------------------------------------------------------------
-    // Lista simple (Id + Name)
-    // ------------------------------------------------------------
     public async Task<IEnumerable<PokemonListItem>> GetListAsync(int limit = 20)
     {
         var data = await _http.GetFromJsonAsync<PokeListResponse>(
@@ -28,16 +25,12 @@ public class PokeApiService : IPokeApiService
         });
     }
 
-    // ------------------------------------------------------------
-    // Detalle completo de un Pokémon
-    // ------------------------------------------------------------
     public async Task<Pokemon> GetAsync(string idOrName)
     {
-        // 1) Datos principales -------------------------------------------------
+
         var pokeJson = JObject.Parse(
             await _http.GetStringAsync($"pokemon/{idOrName}"));
 
-        // 2) Descripción (flavor text) ----------------------------------------
         var speciesJson = JObject.Parse(
             await _http.GetStringAsync($"pokemon-species/{idOrName}"));
 
@@ -51,15 +44,14 @@ public class PokeApiService : IPokeApiService
 
         flavor = flavor.Replace("\n", " ").Replace("\f", " ");
 
-        // 3) Mapeo al modelo ---------------------------------------------------
         return new Pokemon
         {
             Id       = (int)pokeJson["id"]!,
             Name     = (string)pokeJson["name"]!,
             ImageUrl = (string?)pokeJson["sprites"]?["front_default"] ?? string.Empty,
 
-            HeightM  = (decimal)pokeJson["height"]! / 10,   // decímetros → m
-            WeightKg = (decimal)pokeJson["weight"]! / 10,   // hectogramos → kg
+            HeightM  = (decimal)pokeJson["height"]! / 10,
+            WeightKg = (decimal)pokeJson["weight"]! / 10,
 
             Types     = pokeJson["types"]!
                            .Select(t => (string)t["type"]!["name"]!)
@@ -78,7 +70,6 @@ public class PokeApiService : IPokeApiService
         };
     }
 
-    // DTO internos
     private record PokeListResponse(IEnumerable<PokeResult> Results);
     private record PokeResult(string Name, string Url);
 }

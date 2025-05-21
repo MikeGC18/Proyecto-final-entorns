@@ -2,10 +2,8 @@ using Proyecto_final_entorns.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// MVC
 builder.Services.AddControllersWithViews();
 
-// HttpClient para la PokéAPI
 builder.Services.AddHttpClient<IPokeApiService, PokeApiService>(c =>
 {
     c.BaseAddress = new Uri("https://pokeapi.co/api/v2/");

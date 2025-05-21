@@ -3,7 +3,6 @@
     ViewData["Title"] = Model.Name;
 }
 
-<!-- Botón centrado para cambiar a la sección Digimon -->
 <div class="d-flex justify-content-center mb-3">
     <a asp-controller="Digimon"
        asp-action="Index"
@@ -14,7 +13,6 @@
 
 <div class="pokedex">
 
-    <!-- Parte izquierda: carcasa + pantalla -->
     <div>
         <div class="pokedex-lights">
             <div class="pokedex-light" style="--c:#4fc3f7"></div>
@@ -27,7 +25,6 @@
         </div>
     </div>
 
-    <!-- Parte derecha: información -->
     <div class="pokedex-info">
         <h1 class="text-capitalize">@Model.Name (#@Model.Id)</h1>
 
