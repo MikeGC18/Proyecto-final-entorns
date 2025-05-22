@@ -1,6 +1,6 @@
 ---💫 JUSTIFICACIÓ I MOTIVACIÓ DEL PROJECTE 💫--- 
 
-El nostre projecte consisteix en el desenvolupament d’una pàgina web que mostra informació detallada sobre diferents Pokémons i Digimon. Utilitzant diverses API externes, hem pogut extreure i integrar aquesta informació dins la nostra aplicació de manera dinàmica. Tant l’Albert com jo considerem que aquest projecte és una proposta factible i amb interès, ja que té com a objectiu oferir una eina educativa i entretinguda. A través d’aquesta pàgina web, volem conscienciar i despertar la curiositat dels usuaris sobre l’univers dels Pokémon i Digimon, tot afavorint l’aprenentatge d’una manera lúdica i interactiva. Considerem que aquest projecte pot resultar útil i atractiu per als fans, però també pot ser una bona oportunitat per a persones que no coneixen gaire aquestes sèries i vulguin descobrir-les d'una manera visual i ordenada. El fet d'utilitzar dades externes ens ha permès aprendre a consumir APIs i integrar-les en una arquitectura web moderna.
+El projecte consisteix en una pàgina web que mostra informació de Pokémons i Digimons mitjançant APIs externes. L’objectiu és oferir una eina educativa i entretinguda, despertant la curiositat dels usuaris i fomentant l’aprenentatge de manera lúdica i visual. També serveix com a pràctica per aprendre a consumir i integrar APIs dins una arquitectura web moderna.
 
  --ESQUEMA D'ARQUITECTURA---
  
