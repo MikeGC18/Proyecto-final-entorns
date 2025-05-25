@@ -2,10 +2,6 @@
 
 El projecte consisteix en una pàgina web que mostra informació de Pokémons i Digimons mitjançant APIs externes. L’objectiu és oferir una eina educativa i entretinguda, despertant la curiositat dels usuaris i fomentant l’aprenentatge de manera lúdica i visual. També serveix com a pràctica per aprendre a consumir i integrar APIs dins una arquitectura web moderna.
 
- --ESQUEMA D'ARQUITECTURA---
- 
- Esquema%20de%20Arquitectura.pdf
- 
 ---EXPLICACIÓ DETALLADA SEGONS EL MVC👓--- 
 
 -📁Models: Pokemon.cs i Digimon.cs Els models són com plantilles amb les dades que necessito de cada personatge. Per exemple, al model del Pokémon hi ha el nom, l’alçada, el pes, el tipus, etc. A més, hem fet algunes propietats que es calculen automàticament, com passar l’alçada de decímetres a metres o el pes a quilos. Amb els Digimon passa una cosa semblant, però més senzill: només mostrem el nom, el nivell i la imatge.
