@@ -18,6 +18,7 @@ El servei de Digimon DigimonApiService és molt més fàcil de fer, perquè l’
 -🎨Estils: wwwroot/css/pokedex.css Perquè tot quedi amb estil de Pokédex, hem afegit un fitxer CSS que simula la carcassa vermella, la pantalla i unes llums decoratives. També hem posat object-fit: contain perquè les imatges no surtin tallades i encaixin bé.
 
 ---PROPOSTES DE MILLORA I NOVES FUNCIONALITATS--- 
+
 Hem pensat en diverses millores per fer el projecte més complet: 
 
 ·Cerca i paginació: Afegir una vista de llista amb una barra de cerca ràpida i càrrega per demanda per buscar Pokémon o Digimon més fàcilment. 
